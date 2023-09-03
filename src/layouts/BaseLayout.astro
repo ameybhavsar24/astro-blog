@@ -1,0 +1,17 @@
+---
+import CommonHead from "../components/CommonHead.astro";
+import Navigation from "../components/Navigation.astro";
+import Container from '../components/Container.astro'
+const { pageTitle, pageDescription } = Astro.props
+---
+<html lang='en'>
+  <head>
+    <CommonHead title={pageTitle } description={pageDescription} />
+  </head>
+  <body>
+    <Navigation />
+    <Container>
+      <slot />
+    </Container>
+  </body>
+</html>

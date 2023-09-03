@@ -1,17 +1,20 @@
 ---
 import CommonHead from "../components/CommonHead.astro";
 import Navigation from "../components/Navigation.astro";
-import Container from '../components/Container.astro'
-const { pageTitle, pageDescription } = Astro.props
+import Container from "../components/Container.astro";
+import GithubButton from "../components/GithubButton.astro";
+const { pageTitle, pageDescription } = Astro.props;
 ---
+
 <html lang='en'>
   <head>
-    <CommonHead title={pageTitle } description={pageDescription} />
+    <CommonHead title={pageTitle} description={pageDescription} />
   </head>
   <body>
     <Navigation />
     <Container>
       <slot />
+      <GithubButton />
     </Container>
   </body>
 </html>

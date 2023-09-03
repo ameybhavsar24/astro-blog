@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Inter";
+  src: ("/fonts/Inter.var.woff2") format("woff2");
+  font-display: swap;
+}
+
 html,
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   border: none;
   outline: none;
@@ -11,4 +17,8 @@ body {
   color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
 }
